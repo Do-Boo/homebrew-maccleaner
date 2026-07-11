@@ -1,18 +1,23 @@
-# Do-Boo Maccleaner
+# Homebrew MacCleaner
 
-## How do I install these formulae?
+Homebrew cask for [MacCleaner](https://github.com/Do-Boo/maccleaner), a native SwiftUI storage cleanup and system maintenance utility.
 
-`brew install do-boo/maccleaner/<formula>`
+## Install
 
-Or `brew tap do-boo/maccleaner` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "do-boo/maccleaner"
-brew "<formula>"
+```bash
+brew install --cask do-boo/maccleaner/maccleaner
 ```
 
-## Documentation
+## Uninstall
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```bash
+brew uninstall --cask do-boo/maccleaner/maccleaner
+```
+
+To remove saved settings as well:
+
+```bash
+brew uninstall --cask --zap do-boo/maccleaner/maccleaner
+```
+
+Requires macOS 14 Sonoma or later. The release archive is a universal binary for Apple Silicon and Intel Macs.
